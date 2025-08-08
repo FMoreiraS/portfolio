@@ -1,3 +1,14 @@
 html {
-    background-color: rgb(139, 15, 123);
+    background-color: rgb(245, 224, 255);
+    text-align: center;
+}
+
+nav ul {
+    width: 100%;
+}
+nav li{
+    display: inline;
+}
+:link {
+    text-decoration: none;
 }
