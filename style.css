@@ -1,6 +1,7 @@
 html {
-    background-color: rgb(200, 200, 255);
-    text-align: center;
+    /* background-color: rgb(200, 200, 255); */
+    /* text-align: center; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
@@ -15,6 +16,7 @@ nav li{
 :link {
     text-decoration: none;
 }
+/* Barra de progresso da leitura */
 #progressBar {
     width: 50%;
     height: 30px;
@@ -22,7 +24,7 @@ nav li{
     border: 1px solid rgb(141, 141, 141);
     border-radius: 10px;
     align-content: center;
-    align-items: center;
+    /* align-items: center; */
     box-sizing: border-box;
 }
 #bar {
@@ -35,4 +37,10 @@ nav li{
     border-radius: 7px;
     align-content: center;
     box-sizing: border-box;
+}
+
+#bottomAlert {
+
+    /* position: absolute;
+    margin-bottom: 5px; */
 }
