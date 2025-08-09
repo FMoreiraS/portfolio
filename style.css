@@ -1,8 +1,11 @@
 html {
-    background-color: rgb(245, 224, 255);
+    background-color: rgb(200, 200, 255);
     text-align: center;
 }
 
+nav {
+    float: none;
+}
 nav ul {
     width: 100%;
 }
@@ -11,4 +14,25 @@ nav li{
 }
 :link {
     text-decoration: none;
+}
+#progressBar {
+    width: 50%;
+    height: 30px;
+    margin: 50px auto;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#bar {
+    height: 24px;
+    width: 99.5%;
+    /* background-color: rgb(179, 179, 255);*/
+    background-color: rgb(255, 255, 255);
+    margin: 0px 2px;
+    /* border-radius: inherit; */
+    border-radius: 7px;
+    align-content: center;
+    box-sizing: border-box;
 }
