@@ -2,25 +2,60 @@ html {
     /* background-color: rgb(200, 200, 255); */
     /* text-align: center; */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+/* Definição de grid para diagramação */
+.container {
+    display: grid;
+    grid-template: repeat(5, 20%)/ 25% 75%;
+    /* gap: 5px; */
+}
+
+header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
 }
 
 nav {
-    float: none;
+    /* float: none; */
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
 }
 nav ul {
     width: 100%;
+    list-style: none;
 }
-nav li{
+/* nav li{
     display: inline;
-}
+} */
 :link {
     text-decoration: none;
+}
+
+aside {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    text-align: center;
+}
+#photo {
+    /* width: 80%; */
+    height: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
 }
 /* Barra de progresso da leitura */
 #progressBar {
     width: 50%;
     height: 30px;
-    margin: 50px auto;
+    margin: 5px auto;
     border: 1px solid rgb(141, 141, 141);
     border-radius: 10px;
     align-content: center;
@@ -40,7 +75,7 @@ nav li{
 }
 
 #bottomAlert {
-
+    text-align: center;
     /* position: absolute;
     margin-bottom: 5px; */
 }
