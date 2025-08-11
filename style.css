@@ -1,7 +1,8 @@
 html {
     /* background-color: rgb(200, 200, 255); */
-    /* text-align: center; */
+    text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     box-sizing: border-box;
 }
 body {
@@ -21,17 +22,28 @@ header {
 }
 
 nav {
-    /* float: none; */
+    text-align: center;
     grid-row: 2 / 4;
     grid-column: 2 / 3;
+
 }
 nav ul {
-    width: 100%;
+    width: 90%;
     list-style: none;
+    font-size: 24;
 }
-/* nav li{
-    display: inline;
-} */
+nav li{
+    /* display: inline; */
+    background-color: rgb(86, 86, 209);
+    width: 200px;
+    border-radius: 80px;
+    margin: 20px auto;
+    padding: 20px;
+}
+nav a {
+    color: white;
+    font-size: larger;
+}
 :link {
     text-decoration: none;
 }
