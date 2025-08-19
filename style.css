@@ -1,48 +1,55 @@
 html {
     /* background-color: rgb(200, 200, 255); */
-    text-align: center;
+    /* text-align: center; */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     box-sizing: border-box;
 }
 body {
     margin: 0;
+    /* background-color: rgb(168, 173, 255); */
 }
 
 /* Definição de grid para diagramação */
 .container {
     display: grid;
-    grid-template: repeat(5, 20%)/ 25% 75%;
+    grid-template: repeat(5, 20%)/ 35% 65%;
     /* gap: 5px; */
 }
 
 header {
     grid-row: 1 / 2;
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
+    /* text-align: center; */
+}
+.mainTitle {
+    margin-left: 40px;
 }
 
 nav {
     text-align: center;
-    grid-row: 2 / 4;
+    grid-row: 1 / 2;
     grid-column: 2 / 3;
-
 }
+
 nav ul {
-    width: 90%;
+    /* width: 90%; */
     list-style: none;
-    font-size: 24;
+    /* font-size: 12; */
 }
 nav li{
-    /* display: inline; */
+    /* font-size: 24; */
+    display: inline;
     background-color: rgb(86, 86, 209);
-    width: 200px;
+    /* width: 200px; */
     border-radius: 80px;
     margin: 20px auto;
     padding: 20px;
 }
 nav a {
     color: white;
-    font-size: larger;
+    font-size: 12;
+    /* font-size: larger; */
 }
 :link {
     text-decoration: none;
@@ -51,12 +58,28 @@ nav a {
 aside {
     grid-row: 2 / 4;
     grid-column: 1 / 2;
-    text-align: center;
+    font-size: 24px;
+    text-align:center;
+    /* justify-self: center; */
+    justify-content: center;
+}
+#bigName {
+    font-size:xx-large;
+    text-transform: uppercase;
 }
 #photo {
-    /* width: 80%; */
-    height: 300px;
-    border-radius: 50%;
+    width: 60%;
+    /* height: 300px; */
+    /* border-radius: 50%; */
+}
+
+main {
+    /* text-align: center; */
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+#homeM {
+    text-align: center;
 }
 
 footer {
