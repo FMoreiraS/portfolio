@@ -5,6 +5,7 @@ html {
     font-family: 'Quicksand';
     font-size: 20px;
     box-sizing: border-box;
+    /* color: white; */
 }
 /* @font-face {
     font-family: 'robot crush';
@@ -17,12 +18,15 @@ html {
 body {
     margin: 0;
     /* background-color: rgb(168, 173, 255); */
+    /* background-image: linear-gradient(rgb(48, 48, 48), rgb(110, 110, 110));  */
+    background-color: rgb(194, 194, 230); 
+    /* rgb(49, 49, 49)); */
 }
 
 /* Definição de grid para diagramação */
 .container {
     display: grid;
-    grid-template: repeat(5, 20%)/ 35% 65%;
+    grid-template: repeat(5, 20%)/ 35% 30 35%;
     /* gap: 5px; */
 }
 
@@ -36,27 +40,41 @@ header {
 }
 
 nav {
-    text-align: center;
     grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
+    margin-top: 10px;
+    text-align: center;
 }
 
 nav ul {
     /* width: 90%; */
     list-style: none;
+    /* margin: 20 auto; */
     /* font-size: 12; */
 }
 nav li{
     /* font-size: 24; */
     display: inline;
-    background-color: rgb(86, 86, 209);
+    /* background-color: rgb(86, 86, 209); */
     /* width: 200px; */
-    border-radius: 80px;
+    /* border-radius: 80px; */
     margin: 20px auto;
     padding: 20px;
 }
+/* nav ul:hover {
+    margin: 0;
+    padding: 20px;
+}
+nav li:hover {
+    background-image: linear-gradient(white, rgba(255, 255, 255, 0));
+    height: 200px;
+    } */
+/* nav a:hover {
+    color: black;
+    background-size: 100% auto;
+} */
 nav a {
-    color: white;
+    color: black;
     font-size: 12;
     /* font-size: larger; */
 }
@@ -68,12 +86,20 @@ aside {
     grid-row: 2 / 4;
     grid-column: 1 / 2;
     font-size: 24px;
-    text-align:justify;
+    /* text-align:justify; */
     margin:auto 20px;   
 }
 #bigName {
     font-size:xx-large;
     text-transform: uppercase;
+    font-weight: bold;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+#photoBox {
+    background-image: radial-gradient(rgb(225, 229, 230), rgb(194, 194, 230));
+    width: 80%;
+    border-radius: 50%;
 }
 #photo {
     width: 60%;
@@ -84,9 +110,9 @@ aside {
 main {
     /* text-align: center; */
     grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
 }
-#homeM {
+#mainIA {
     text-align: center;
 }
 
@@ -102,8 +128,6 @@ footer {
     border: 1px solid rgb(141, 141, 141);
     border-radius: 10px;
     align-content: center;
-    /* align-items: center; */
-    box-sizing: border-box;
 }
 #bar {
     height: 24px;
