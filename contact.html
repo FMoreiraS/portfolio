@@ -22,13 +22,37 @@
                 <li><a href="index.html">Início</a></li>
             </ul>
         </nav>
-        <main>
-            <p>Você pode deixar uma informações de contato, se desejar conversar comigo.</p>
+        <main id="mainCtt">
+            <!-- <img src="network-4109223_640.jpg" class="bgTransp"> -->
+            <p>Você pode deixar informações de contato, se desejar conversar comigo.</p>
             <form>
+                <table>
+                    <tr>
+                        <td>Nome</td>
+                        <td><input type="text" name="name"></td> <br><br>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="email" name="email"></td> <br><br>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td><input type="email" name="email"></td> <br><br>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" name="button">Enviar</button> <br>
+                        </td>
+                    </tr>
+                </table>
                 Nome:<input type="text" name="name"> <br>
                 E-mail:<input type="email" name="email"><br>
                 Rede social:<input type="email" name="email"><br>
                 <button type="submit" name="button">Enviar</button>
+                <label for="name">Nome</label><input type="text" name="name"> <br>
+                <label for="email">E-mail</label> <input type="email" name="email"><br>
+                <label for="linkedin"></label> LinkedIn<input type="text" name="linkedin"><br>
+                <button type="submit" name="button">Enviar</button> <br>
             </form>
             <p>Se preferir contatar-me por minhas redes sociais, pode recorrer às minhas
                 contas do <a href="https://github.com/FMoreiraS">GitHub</a> e do
@@ -37,5 +61,10 @@
         </main>
     </div>
 </body>
-
+<style>
+    .bgTransp {
+        mask-image: -webkit-linear-gradient();
+    }
+    
+</style>
 </html>
