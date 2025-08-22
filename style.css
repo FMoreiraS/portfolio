@@ -1,3 +1,4 @@
+/* Definições gerais */
 html {
     /* background-color: rgb(200, 200, 255); */
     /* text-align: center; */
@@ -6,11 +7,6 @@ html {
     box-sizing: border-box;
     color: white;
     background-color: rgb(194, 194, 230); 
-}
-/* Fonte personalizada, com uso pessoal autorizado pelo criador */
-@font-face {
-    font-family:'Quicksand';
-    src: url(quicksand/Quicksand_Book.otf);
 }
 * {
     margin: 0;
@@ -21,6 +17,25 @@ html {
     /* background-image: linear-gradient(rgb(48, 48, 48), rgb(110, 110, 110));  */
     /* rgb(49, 49, 49)); */
 }
+/* Fonte personalizada, com uso pessoal autorizado pelo criador */
+@font-face {
+    font-family:'Quicksand';
+    src: url(quicksand/Quicksand_Book.otf);
+}
+
+:link {
+    text-decoration: none;
+    color: rgb(50, 50, 112);
+}
+a:hover {
+    color: #9e35c8
+}
+a:visited {
+    /* text-decoration: underline solid white; */
+    text-decoration-color: white;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+}
 
 /* Definição de grid para diagramação */
 .container {
@@ -30,7 +45,7 @@ html {
     grid-template-rows: repeat(5, 20%); */
     /* gap: 5px; */
 }
-
+/* Definições para header e associados */
 header {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -41,6 +56,7 @@ header {
     margin-left: 40px;
 }
 
+/* Definições para barra de navegação */
 nav {
     grid-row: 1 / 2;
     grid-column: 2 / 4;
@@ -50,7 +66,6 @@ nav {
     text-align: center;
     /* box-sizing: border-box; */
 }
-
 nav ul {
     /* width: 90%; */
     height: 100%;
@@ -72,21 +87,12 @@ nav li{
     margin: 0px 10px;
     /* margin-top: 20px; */
 }
-nav a {
+nav a:link {
     color: white;
     font-size: 12;
     /* font-size: larger; */
 }
-:link {
-    text-decoration: none;
-    color: rgb(50, 50, 112);
-}
-main a:hover {
-    color: #9e35c8
-}
-main a:visited {
-    text-decoration: underline;
-}
+
 /* nav ul:hover {
     margin: 0;
     padding: 20px;
@@ -101,7 +107,7 @@ nav li:hover {
     /* padding-bottom: 30px; */
     box-sizing: content-box;
     /* height: 200px; não funciona */
-    }
+}
 nav a:hover {
     color: black;
     /* background-image: linear-gradient(white, rgba(255, 255, 255, 0)); */
@@ -109,12 +115,18 @@ nav a:hover {
     overflow: visible;
 }
 
+/* Definições para aside e subelementos */
 aside {
     grid-row: 2 / 4;
-    grid-column: 1 / 2;
     font-size: 24px;
     /* text-align:justify; */
-    margin:auto 20px;   
+    margin: auto 20px;   
+}
+.asdL {
+    grid-column: 1 / 2;
+}
+.asdR {
+    grid-column: 3 / 4;
 }
 #bigName {
     font-size:xx-large;
@@ -128,18 +140,36 @@ aside {
     width: 80%;
     border-radius: 50%;
 }
-.photo {
+#photo {
     width: 60%;
     margin: 10px auto;
     /* height: 300px; */
     /* border-radius: 50%; */
 }
 
-main {
-    /* text-align: center; */
+/* main {
     grid-row: 2 / 3;
     grid-column: 2 / 4;
     padding: 30px 0px;
+} */
+main {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    padding: 30px 10px;
+}
+.justSelfCenter {
+    justify-self: center;
+}
+section {
+    grid-row: 2 / 3;
+    padding: 30px 0px;
+    margin: 10px auto;
+}
+section.left {
+    grid-column: 1 / 3;
+}
+section.right {
+    grid-column: 2 / 4;
 }
 #mainHome {
     text-align: center;
@@ -150,9 +180,15 @@ main {
 #mainAbout li {
     margin-left: 20px;
 }
-
+.projectImg {
+    width: 500px;
+    display: block;
+    margin: 10px auto;
+}
+.projectImg img {
+    width: 100%;
+}
 #mainCtt {
-    grid-column: 1 / 4;
     text-align: center;
 }
 #mainCtt table {
