@@ -50,7 +50,7 @@ a:hover {
 /* Definição de grid para diagramação */
 .container {
     display: grid;
-    grid-template: repeat(5, 20%) / 35% 30% 35%;
+    grid-template: repeat(4, 25%) / 35% 30% 35%;
     /* grid-template-columns: 35% 30% 35%;
     grid-template-rows: repeat(5, 20%); */
     /* gap: 5px; */
@@ -87,6 +87,11 @@ nav ul {
     padding-top: 20px;
 }
 nav li{
+    /* background-size: 100px auto; */
+    /* padding: 20px 10px 30px 10px; */
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
     /* font-size: 24; */
     /* height: 100%;  não funciona*/
     display: inline;
@@ -95,7 +100,7 @@ nav li{
     /* border-radius: 80px; */
     /* margin: 20px auto; */
     /* padding: 20px; */
-    margin: 0px 10px;
+    /* margin: 0px 10px; */
     /* margin-top: 20px; */
 }
 nav a:link {
@@ -112,10 +117,13 @@ nav li:hover {
     /* color: black; */
     background-image: linear-gradient(white, rgba(255, 255, 255, 0));
     background-size: 100px auto;
-    /* padding-top: 10px; */
-    padding: 20px 10px 30px 10px;
+    /* padding: 20px 10px 30px 10px; */
+    padding-bottom: 50px;
     margin: 0px;
     /* padding-bottom: 30px; */
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    /* transition-property: background; */
     box-sizing: content-box;
     /* height: 200px; não funciona */
 }
@@ -190,6 +198,9 @@ section.left {
 section.right {
     grid-column: 2 / 4;
 }
+#mainAbout li {
+    margin-left: 20px;
+}
 .centralArticle {
     width: 60%;
     /* align-self: center; */
@@ -199,18 +210,24 @@ section.right {
     border-bottom: 2px solid white;
     border-right: 2px solid white;
     padding: 4px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    /* width: 740px;
+    margin: auto; */
 }
-/* .articleBox2 {
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    padding: 4px;
+/* .articleBox img {
+    height: 300px;
+    margin: 2px auto;
+    display: block;
 } */
-
-/* #mainAbout {
-    padding-top: 30px;
-} */
-#mainAbout li {
-    margin-left: 20px;
+.certifImg {
+    height: 300px;
+    margin: 2px auto;
+    display: block;
+}
+.portfolio {
+    width: 740px;
+    margin: 20px auto;
 }
 .projectImg {
     width: 500px;
