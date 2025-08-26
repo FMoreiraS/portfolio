@@ -39,10 +39,6 @@ a:hover {
     color: white;
 }
 
-.centralizedText {
-    text-align: center;
-}
-
 /* Definição de grid para diagramação do site, com 4 linhas e 3 colunas */
 .container {
     display: grid;
@@ -183,6 +179,9 @@ form input {
 }
 
 /* Classes utilitárias */
+.centralizedText {
+    text-align: center;
+}
 
 .justSelfCenter {
     justify-self: center;
