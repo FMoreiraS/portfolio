@@ -20,7 +20,7 @@ html {
 /* Fonte personalizada, com uso pessoal autorizado pelo criador */
 @font-face {
     font-family:'Quicksand';
-    src: url(quicksand/Quicksand_Book.otf);
+    src: url(fonts/Quicksand_Book.otf);
 }
 
 h2 {
