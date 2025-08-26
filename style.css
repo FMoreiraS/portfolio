@@ -1,7 +1,6 @@
-/* Definições gerais */
+/* Estilização geral do site */
 html {
-    /* background-color: rgb(200, 200, 255); */
-    /* text-align: center; */
+
     font-family: 'Quicksand';
     font-size: 20px;
     box-sizing: border-box;
@@ -13,9 +12,6 @@ html {
     padding: 0;
     list-style-type: none;
     box-sizing: border-box;
-    /* background-color: rgb(168, 173, 255); */
-    /* background-image: linear-gradient(rgb(48, 48, 48), rgb(110, 110, 110));  */
-    /* rgb(49, 49, 49)); */
 }
 /* Fonte personalizada, com uso pessoal autorizado pelo criador */
 @font-face {
@@ -27,118 +23,87 @@ h2 {
     font-weight:900;
     text-align: center;
 }
+
 :link {
     text-decoration: none;
     color: rgb(50, 50, 112);
 }
+
 a:hover {
     color: #9e35c8
 }
-/* :visited { limitações normais impedem o funcionamento
-    text-decoration: underline solid white;
-    text-decoration-color: white;
-    text-decoration-style: solid;
-    text-decoration-thickness: 1px;
-} */
+
 :visited {
     color: white;
 }
+
 .centralizedText {
     text-align: center;
 }
 
-/* Definição de grid para diagramação */
+/* Definição de grid para diagramação do site, com 4 linhas e 3 colunas */
 .container {
     display: grid;
     grid-template: repeat(4, 25%) / 35% 30% 35%;
-    /* grid-template-columns: 35% 30% 35%;
-    grid-template-rows: repeat(5, 20%); */
-    /* gap: 5px; */
 }
+
 /* Definições para header e associados */
 header {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    /* font-size: 22px; */
-    /* text-align: center; */
 }
 .mainTitle {
     margin-top: 15px;
     margin-left: 40px;
 }
 
-/* Definições para barra de navegação */
+/* Definições para barra de navegação no topo e seus subelementos */
 nav {
     grid-row: 1 / 2;
     grid-column: 2 / 4;
-    /* margin-top: 10px; */
     padding: 0;
-    align-content: center;
     text-align: center;
-    /* box-sizing: border-box; */
 }
+
 nav ul {
-    /* width: 90%; */
     height: 100%;
     list-style: none;
-    /* margin: 20 auto; */
     padding: 0;
-    /* font-size: 12; */
     padding-top: 20px;
 }
+
 nav li{
-    /* background-size: 100px auto; */
-    /* padding: 20px 10px 30px 10px; */
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
-    /* font-size: 24; */
-    /* height: 100%;  não funciona*/
     display: inline;
-    /* background-color: rgb(86, 86, 209); */
-    /* width: 200px; */
-    /* border-radius: 80px; */
-    /* margin: 20px auto; */
-    /* padding: 20px; */
-    /* margin: 0px 10px; */
-    /* margin-top: 20px; */
+    font-weight: 700;
 }
+
 nav a:link {
     color: white;
     font-size: 12;
-    /* font-size: larger; */
 }
 
-/* nav ul:hover {
-    margin: 0;
-    padding: 20px;
-} */
+/* Animação para os links de navegação, associada à pseudoclasse hover */
 nav li:hover {
-    /* color: black; */
     background-image: linear-gradient(white, rgba(255, 255, 255, 0));
     background-size: 100px auto;
-    /* padding: 20px 10px 30px 10px; */
     padding-bottom: 50px;
     margin: 0px;
-    /* padding-bottom: 30px; */
     transition-duration: 400ms;
     transition-timing-function: ease;
-    /* transition-property: background; */
     box-sizing: content-box;
-    /* height: 200px; não funciona */
 }
 nav a:hover {
     color: black;
-    /* background-image: linear-gradient(white, rgba(255, 255, 255, 0)); */
-    /* background-size: 100px auto; */
     overflow: visible;
 }
 
-/* Definições para aside e subelementos */
+/* Definição geral de aside e para asides à esquerda e à direita */
 aside {
     grid-row: 2 / 4;
     font-size: 24px;
-    /* text-align:justify; */
     margin: auto 20px;   
 }
 .asdL {
@@ -147,46 +112,42 @@ aside {
 .asdR {
     grid-column: 3 / 4;
 }
+
+/* Estilização ao nome do autor no aside do index */
 #bigName {
     font-size:xx-large;
     text-transform: uppercase;
     font-weight: bold;
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
 }
-/* #photoBox {
-    background-image: radial-gradient(rgb(225, 229, 230), rgb(194, 194, 230));
-    background-color: white;
-    border-radius: 50%;
-    
-    box-sizing: content-box;
-} */
+
+/* Tratamento para imagens do autor presentes no index e no about */
 #photoHome {
     width: 60%;
     margin: 10px auto;
-    /* height: 300px; */
-    /* border-radius: 50%; */
 }
 #photoAbout {
     width: 70%;
     background-color: white;
     border-radius: 50%;
-    /* align-self: center; */
-    /* text-align: center; */
 }
-/* main {
-    grid-row: 2 / 3;
-    grid-column: 2 / 4;
-    padding: 30px 0px;
-} */
+
+/* Elemento grid para ocupar toda a tela e estilizações relacionadas */
 main {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
     padding: 30px 10px;
 }
-.justSelfCenter {
-    justify-self: center;
+
+main table {
+    margin: auto;
+    /* line-height: 25px; */
 }
+
+#mainAbout li {
+    margin-left: 20px;
+}
+
+/* Elemento grid para dividir espaço com aside */
 section {
     grid-row: 2 / 3;
     padding: 30px 0px;
@@ -198,58 +159,9 @@ section.left {
 section.right {
     grid-column: 2 / 4;
 }
-#mainAbout li {
-    margin-left: 20px;
-}
-.centralArticle {
-    width: 60%;
-    /* align-self: center; */
-    margin: 0 auto;
-}
-.articleBox {
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-    padding: 4px;
-    margin-bottom: 20px;
-    line-height: 24px;
-    /* width: 740px;
-    margin: auto; */
-}
-/* .articleBox img {
-    height: 300px;
-    margin: 2px auto;
-    display: block;
-} */
-.certifImg {
-    height: 300px;
-    margin: 2px auto;
-    display: block;
-}
-.portfolio {
-    width: 740px;
-    margin: 20px auto;
-}
-.projectImg {
-    width: 500px;
-    display: block;
-    margin: 10px auto;
-}
-.projectImg img {
-    width: 100%;
-}
 
-main table {
-    margin: auto;
-    /* line-height: 25px; */
-}
-.icon {
-    display: block;
-    height: 60px;
-    margin: 10px auto;
-    /* border-radius: 10px; */
-}
+/* Definições para o formulário em contact.html */
 form {
-    /* text-align: center; */
     font-size: 22px;
     margin: 20px auto;
     padding: 20px 40px 20px 40px;
@@ -268,35 +180,52 @@ form input {
     margin: 2px 0px;
 }
 
-/* Rodapé e seus componentes (com barra de progresso da leitura) */
-footer {
-    grid-row: 5 / 6;
-    grid-column: 1 / 4;
-    text-align: center;
-}
-/* Barra de progresso da leitura */
-#progressBar {
-    width: 50%;
-    height: 30px;
-    margin: 5px auto;
-    border: 1px solid rgb(141, 141, 141);
-    border-radius: 10px;
-    align-content: center;
-}
-#bar {
-    height: 24px;
-    width: 99.5%;
-    /* background-color: rgb(179, 179, 255);*/
-    background-color: rgb(255, 255, 255);
-    margin: 0px 2px;
-    /* border-radius: inherit; */
-    border-radius: 7px;
-    align-content: center;
-    box-sizing: border-box;
+/* Classes utilitárias */
+
+.justSelfCenter {
+    justify-self: center;
 }
 
-#bottomAlert {
-    text-align: center;
-    /* position: absolute;
-    margin-bottom: 5px; */
+.centralArticle {
+    width: 60%;
+    /* align-self: center; */
+    margin: 0 auto;
+}
+
+.articleBox {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    /* width: 740px;
+    margin: auto; */
+}
+
+.certifImg {
+    height: 300px;
+    margin: 2px auto;
+    display: block;
+}
+
+.portfolio {
+    width: 740px;
+    margin: 20px auto;
+}
+
+.projectImg {
+    width: 500px;
+    display: block;
+    margin: 10px auto;
+}
+
+.projectImg img {
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    height: 60px;
+    margin: 10px auto;
+    /* border-radius: 10px; */
 }
