@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -23,19 +21,23 @@
         </nav>
         <main class="centralizedText">
             <p>Você pode deixar informações de contato, se desejar conversar comigo.</p>
-            <form >
+            <form>
                 <table>
                     <tr>
-                        <td>Nome</td>
+                        <td><label for="name">Nome</label></td>
                         <td><input type="text" name="name"></td>
                     </tr>
                     <tr>
-                        <td>E-mail</td>
+                        <td><label for="email">E-mail</label></td>
                         <td><input type="email" name="email"></td>
                     </tr>
                     <tr>
-                        <td>LinkedIn</td>
-                        <td><input type="email" name="email"></td>
+                        <td><label for="linkedin">LinkedIn</label></td>
+                        <td><input type="text" name="linkedin"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Mensagem</label></td>
+                        <td><textarea name="message" rows="10" cols="22"></textarea></td>
                     </tr>
                     <tr>
                         <td colspan="2">
