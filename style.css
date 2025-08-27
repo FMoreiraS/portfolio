@@ -160,11 +160,12 @@ section.right {
 form {
     font-size: 22px;
     margin: 20px auto;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
     background-color: rgb(231, 230, 247);
     border-radius: 20px;
     width: 30%;
     color: black;
+    overflow: auto;
 }
 form button {
     width: 90px;
@@ -181,10 +182,6 @@ form input {
     text-align: center;
 }
 
-.justSelfCenter {
-    justify-self: center;
-}
-
 .centralArticle {
     width: 60%;
     margin: 0 auto;
@@ -199,18 +196,23 @@ form input {
 }
 
 .certifImg {
-    height: 300px;
+    width: 80%;
     margin: 2px auto;
     display: block;
 }
 
+.education {
+    width: 40%;
+    margin: 0px auto;
+}
+
 .portfolio {
-    width: 740px;
+    width: 92%;
     margin: 20px auto;
 }
 
 .projectImg {
-    width: 500px;
+    width: 80%;
     display: block;
     margin: 10px auto;
 }
